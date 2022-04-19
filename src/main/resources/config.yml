@@ -1,0 +1,77 @@
+license: XXXX-XXXX-XXXX-XXXX
+## PERMISSÕES
+#   - eautoclick.command.autoclick > Permissão para usar o comando /autoclick
+#   - eautoclick.command.autoclick.area > Permissão para que o autoclick funcione em área
+#   - eautoclick.command.eautoclick > Permissão para usar o comando /eautoclick (reload na configuração)
+#   - eautoclick.bypass.location > Pode usar o autoclick independente da localização
+#   - eautoclick.bypass.autodisable > O autoclick não irá desabilitar quando não estiver batendo
+
+# De quanto em quanto tempo o autoclicker irá bater
+# 20 = 1 segundo, então 10 = 0.5 segundo e 5 = 0.25 segundo
+ms_per_click:
+  # Tempo padrão - não precisa de permissão
+  default: 15
+  # Jogadores com a permissão eautoclick.ms.vip irão bater 2x mais rápido que o tempo padrão
+  vip: 5
+
+# Caso true o plugin irá funcionar no modo lite
+# É recomendado se o plugin estiver usando muita memória/cpu
+# Ao ativar a opção de alterar a velocidade do click por permissão será desabilitada
+lite_mode:
+  enabled: false
+  click_time: 15
+
+# Quantos mobs a pessoa pode atacar por vez
+mobs_per_hit:
+  # Por padrão só é permitido atacar 1 mob por vez
+  default: 1
+  # Porém jogadores com a permissão eautoclick.mobs.vip atacam todos que estiverem na frente ao mesmo tempo
+  vip: -1
+  # E jogadores com a permissão eautoclick.mobs.3 atacam no máximo 3 mobs de uma vez
+  3: 3
+
+# Tempo para o autoclicker desativar automaticamente por inatividade
+auto_disable:
+  enabled: true
+  time: 120
+
+# Caso true a mão do jogador irá fazer a animação quando o autoclicker bater
+# atenção: alguns anti-cheat detectam como aimbot ou autoclicker
+hand_animation: true
+# Caso true o dano do autoclicker será calculado com a poção de força
+strength_potion: true
+# Caso true o dano do autoclicker será calculado com o encantamento sharpness do item
+sharpness: true
+
+fixed_damage:
+  # Caso true o dano causado pelo autoclicker será sempre o mesmo, independente
+  # do item que o jogador estiver na mão
+  enabled: false
+  # Dano causado pelo autoclicker
+  damage: 3.0
+
+# Quando o jogador usar o autoclicker com um dos itens configurados
+# abaixo na mão o mob receberá o dano determinado
+custom_damage:
+  # Exemplo: se o jogador estiver com um machado de madeira na mão enquanto o
+  #          autoclicker estiver ativado, o mob vai sempre receber 20 de dano
+  WOOD_AXE: 20.0
+  ANVIL: 50.0
+
+# Essa parte só é necessária caso você use o plugin PlotSquared
+plots:
+  # Caso true o autoclicker funcionará apenas quando o jogador estiver dentro de um plot
+  enabled: false
+  # Caso true o autoclicker funcionará para todos os membros do terreno
+  member: false
+  # Caso true o autoclicker funcionará apenas para os membros confiados do terreno
+  trusted: true
+
+factions:
+  # Caso true o autoclicker funcionará apenas quando o jogador estiver no terreno da facção
+  # Compatível apenas com Factions e MambaFactions
+  enabled: false
+
+# Mundos em que o autoclicker não irá funcionar
+disabled_worlds:
+  - 'sem_autoclick'

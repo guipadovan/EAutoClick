@@ -1,0 +1,14 @@
+name: EAutoClick
+version: ${project.version}
+main: com.exitius.eautoclick.EAutoClick
+prefix: EAutoClick
+softdepend: [ PlotSquared, Factions ]
+authors: [ Guii ]
+description: Adiciona a função autoclick no servidor
+commands:
+  autoclick:
+    description: Comando para ativar ou desativar o autoclicker
+    aliases: [autoclicker]
+  eautoclick:
+    description: Recarrega as configuracoes do plugin
+    aliases: [eacreload, eacr]

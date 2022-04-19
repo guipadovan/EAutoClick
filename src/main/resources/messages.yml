@@ -1,0 +1,6 @@
+enabled: '&aAutoclicker ativado com sucesso'
+disabled: '&eAutoclicker desativado com sucesso'
+auto_disable: '&eVocê ficou muito tempo sem bater em mobs e seu autoclicker foi desativado'
+error:
+  disabled_world: '&4ERRO: &cO AutoClicker está desativado nesse mundo'
+  no_perm: '&4ERRO: &cVocê não tem permissão para usar esse comando'

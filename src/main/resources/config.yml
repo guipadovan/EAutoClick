@@ -1,4 +1,3 @@
-license: XXXX-XXXX-XXXX-XXXX
 ## PERMISSÕES
 #   - eautoclick.command.autoclick > Permissão para usar o comando /autoclick
 #   - eautoclick.command.autoclick.area > Permissão para que o autoclick funcione em área
@@ -37,6 +36,7 @@ auto_disable:
 
 # Caso true a mão do jogador irá fazer a animação quando o autoclicker bater
 # atenção: alguns anti-cheat detectam como aimbot ou autoclicker
+# *** FUNÇÃO DESATIVADA ***
 hand_animation: true
 # Caso true o dano do autoclicker será calculado com a poção de força
 strength_potion: true

@@ -1,6 +1,8 @@
 package com.exitius.eautoclick.utils;
 
-import org.bukkit.entity.*;
+import org.bukkit.entity.Creature;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 import java.util.Iterator;

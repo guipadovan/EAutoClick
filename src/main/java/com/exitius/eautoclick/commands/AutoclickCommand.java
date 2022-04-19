@@ -7,7 +7,6 @@ import com.exitius.eautoclick.utils.commands.ESubCommand;
 import com.exitius.eautoclick.utils.messages.Messages;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.scheduler.BukkitTask;
 
 import java.util.HashMap;
 

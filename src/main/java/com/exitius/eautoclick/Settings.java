@@ -2,9 +2,7 @@ package com.exitius.eautoclick;
 
 import com.exitius.eautoclick.utils.FileStorage;
 import org.bukkit.Material;
-import org.bukkit.configuration.file.FileConfiguration;
 
-import java.io.File;
 import java.util.HashMap;
 import java.util.List;
 import java.util.logging.Level;

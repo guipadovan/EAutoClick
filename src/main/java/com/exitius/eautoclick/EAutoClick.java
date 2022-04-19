@@ -36,6 +36,18 @@ public final class EAutoClick extends JavaPlugin {
         EAutoClick.settings = settings;
     }
 
+    public static void log(String message) {
+        instance.getLogger().log(Level.INFO, message);
+    }
+
+    public static void log(Level level, String message) {
+        instance.getLogger().log(level, message);
+    }
+
+    public static Messages getMessages() {
+        return messages;
+    }
+
     public FileStorage getFileStorage() {
         return fileStorage;
     }
@@ -87,18 +99,6 @@ public final class EAutoClick extends JavaPlugin {
     public void onDisable() {
         log("Plugin desabilitando, desativando jogadores com AutoClicker");
         AutoclickCommand.autoclick.clear();
-    }
-
-    public static void log(String message) {
-        instance.getLogger().log(Level.INFO, message);
-    }
-
-    public static void log(Level level, String message) {
-        instance.getLogger().log(level, message);
-    }
-
-    public static Messages getMessages() {
-        return messages;
     }
 
     public PlotAPI getPlotAPI() {

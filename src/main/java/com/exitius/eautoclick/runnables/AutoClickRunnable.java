@@ -83,7 +83,7 @@ public class AutoClickRunnable extends BukkitRunnable {
 
         }
         if (EAutoClick.getSettings().AUTODISABLE_ENABLED)
-            if (TimeAPI.toTime(EAutoClick.getSettings().AUTODISABLE_TIME + "s")+lastDamage <= System.currentTimeMillis()) {
+            if (TimeAPI.toTime(EAutoClick.getSettings().AUTODISABLE_TIME + "s") + lastDamage <= System.currentTimeMillis()) {
                 Messages.sendMessage(player, EAutoClick.getMessages().getMessage("auto_disable"));
                 this.cancel();
                 AutoclickCommand.autoclick.remove(player.getName());
